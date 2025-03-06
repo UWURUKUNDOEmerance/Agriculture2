@@ -1,10 +1,11 @@
 .footer {
-  background-image: url("../assets/image3.jpg");
+  /* background-image: url("../assets/image3.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 50vh;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); */
+  background-color: #084d0a;
   }
   
   .footer-info {
@@ -12,7 +13,9 @@
     justify-content: space-around;
     padding: 20px;
   }
-  
+  .subscribe{
+    margin-left: 200px;
+  }
   .subscribe input {
     padding: 8px;
     margin-right: 10px;
@@ -36,5 +39,6 @@
     display: flex;
     text-align: center;
     color: white;
-    margin-left: 300px ;
+    margin-left: 500px ;
+    margin-top: 100px;
   }

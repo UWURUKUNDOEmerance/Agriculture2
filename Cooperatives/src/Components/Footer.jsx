@@ -4,7 +4,7 @@ import "../Styles/footer.css"
 const Footer =()=>{
     return(
         <footer className="footer">
-        <div className="subscribe">
+         <div className="subscribe">
           <input type="email" placeholder="Your email address" />
           <button>Subscribe Now</button>
         </div>
@@ -14,6 +14,7 @@ const Footer =()=>{
             <p>yourcompany@gmail.com</p>
             <p>+014-202-400203</p>
           </div>
+         
           <div className="contact">
             <p>Address</p>
             <p>444 Brooklyn, New York, America</p>

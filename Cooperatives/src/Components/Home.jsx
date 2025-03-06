@@ -1,13 +1,14 @@
 import React from "react";
 import  "../Styles/home.css";
 import { VscArrowRight } from "react-icons/vsc";
-import coffee from "../assets/coffee.jpeg";
-import rice from "../assets/rice.jpg";
-import maize from "../assets/maize.jpg";
+import Coffee from "../assets/Coffee.jpeg";
+import Rice from "../assets/Rice.jpg";
+import Maize from "../assets/Maize.jpg";
+import image5 from "../assets/image5.jpg"
 export const Cooperatives = [
-  { name: "coffee", image:coffee},
-  { name: "rice", image:rice},
-  { name: "maize", image:maize},
+  { name: "Tea Cooperatives 🍵",image:Coffee},
+  { name: "Cooperative B", image:Rice},
+  { name: " Maize and Grain Cooperatives 🌽", image:image5},
 ];
 const Home = () => {
   return (
@@ -38,7 +39,7 @@ const Home = () => {
           <div className="cooperative">
             {Cooperatives.map((item,index)=>(
            <div key={index}>
-           <img src={item.image} alt={item.name} style={{ width: "400px", height: "400px", padding: "15px", margin: "20px" }} />
+           <img src={item.image} alt={item.name} style={{ width: "350px", height: "350px", padding: "5px", margin: "10px" }} />
            <h3>{item.name}</h3>
          </div>   
             ))}

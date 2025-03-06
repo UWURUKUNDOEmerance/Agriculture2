@@ -11,7 +11,7 @@
 
   .content{
   
-    background-image: url("../assets/image3.jpg");
+    background-image: url("../assets/blue.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -106,42 +106,8 @@ color: white;
 }
 
 
-Cooperative List
-.cooperative-list {
-  display: flex;
-  justify-content: center; 
-   gap: 15px;
-  flex-wrap: wrap;
-  padding: 50px 50px;
-
-}
-
-
-.cooperative {
  
-  color: #2c7a2c;
-  font-weight: bold;
-  padding: 15px 20px;
-  padding-left: 40px;
-  margin-left: 100px;
- 
-  transition: transform 0.3s, box-shadow 0.3s;
-  cursor: pointer;
-}
 
-.cooperative:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-  .cooperative-list {
-    flex-direction: column;
-    gap: 10px;
-    
-  }
-} */
 .featured {
   padding: 40px 20px;
   text-align: center;
@@ -155,11 +121,12 @@ Cooperative List
   text-align: center;
 }
 
+
 .cooperative-list {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  
+  /* flex-wrap: wrap; */
   padding: 20px;
   flex-direction:column
 }
@@ -167,54 +134,23 @@ Cooperative List
 .cooperative {
  
  display: flex;
-  padding: 15px;
+
  
-  text-align: center;
-  width: 220px;
+
   font-weight: bold;
-  transition: transform 0.3s ease-in-out;
+  /* transition: transform 0.3s ease-in-out; */
 
 }
 
-.cooperative:hover {
-  transform: scale(1.05);
-}
 
-.cooperative img {
-  width: 200px;
-  height: 200px;
-  border-radius: 8px;
-  margin-bottom: 10px;
- 
-}
 
-.cooperative h3 {
-  font-size: 1.2rem;
-  color:#2c7a2c;  
- 
-}
-/* .cooperative-list {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-} */
 
-/* .cooperative {
-  background: white;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 200px;
-  font-weight: bold;
-} */
-/* 
-.cooperative img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-top: 10px;
-} */
+
+
+
+
+
+
 
 
   
