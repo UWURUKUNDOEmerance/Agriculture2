@@ -29,7 +29,7 @@ const Footer =()=>{
             </ul>
           </div>
         </div>
-        <p className="all"> All Rights Reserved</p>
+        <p className="all"> All Rights Reserved 2025</p>
       </footer>
     )
 }
