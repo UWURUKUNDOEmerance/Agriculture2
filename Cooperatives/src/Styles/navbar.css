@@ -1,0 +1,32 @@
+.navbar {
+    background-color: #4caf50;
+    color: white;
+    padding: 15px;
+   
+    /* width: 1000px; */
+   
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+  }
+  
+   .list {
+    margin: 0 15px;
+    cursor: pointer;
+   color: white;
+  } 
+  .logo {
+    font-size: 40px;
+    font-weight: bold;
+    color: #e6f4ea; 
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    padding: 10px 20px;
+    width: fit-content;
+  }
+  

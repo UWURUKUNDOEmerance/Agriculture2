@@ -1,0 +1,40 @@
+.footer {
+  background-image: url("../assets/image3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .footer-info {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .subscribe input {
+    padding: 8px;
+    margin-right: 10px;
+  }
+  
+  .subscribe button {
+    background: #4caf50;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+  }
+  .contact p{
+    display:flex;
+    color: white;
+  }
+  .contact  ul li{
+    color: white;
+  }
+  .all{
+    display: flex;
+    text-align: center;
+    color: white;
+    margin-left: 300px ;
+  }
