@@ -1,29 +1,29 @@
+/* Navbar Container */
 .navbar {
-    background-color: #084d0a;
-    color: white;
-    padding: 15px;
-   
-    /* width: 1000px; */
-   
-  }
+  background-color: #084d0a;
+  color: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
-  .logo {
-    font-size: 40px;
-    font-weight: bold;
-    color: #e6f4ea; 
-    display: flex;
-    align-items: center;
-    gap: 8px; 
-    /* padding: 10px 20px; */
-    width: fit-content;
-  }
-  .menu {
-   display: flex;
-    padding: 10px 0;
-    text-align: center;
-    top:100px;
-    margin-left: 400px;
-  
+/* Logo */
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+  color: #e6f4ea;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 20px;
+}
+
+/* Navigation Menu */
+.menu {
+  flex: 1;
+  text-align: center;
 }
 
 .menu ul {
@@ -50,14 +50,92 @@
 }
 
 .menu .list:hover {
-  background-color: #8ddd94;
+ 
   color: #fff;
 }
 
-@media (max-width: 768px) {
+/* Search Bar Section */
+.product {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.search {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #4bce2b;
+  border-radius: 8px;
+  outline: none;
+  width: 200px;
+}
+
+.btn {
+  padding: 10px 16px;
+  background-color: #6cdf7f;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover {
+  background-color: #dfe5ec;
+}
+
+.btn svg {
+  font-size: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
   .menu ul {
-      flex-direction: column;
-      gap: 10px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .product {
+    justify-content: center;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .product {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .search {
+    width: 90%;
+  }
+
+  .btn {
+    width: 100%;
   }
 }
 

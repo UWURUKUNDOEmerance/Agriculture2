@@ -1,0 +1,118 @@
+.cooperatives-container {
+    font-family: Arial, sans-serif;
+    /* text-align: center; */
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+
+  .hero {
+    background: url("../assets/image3.jpg") center/cover no-repeat;
+    padding: 60px 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    background: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .cta-button:hover {
+    background: #218838;
+  }
+  
+
+  .filters {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .filters input,
+  .filters select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .cooperative-list {
+    display: flex;
+    flex-direction: row; /* Arrange in a column */
+    align-items: center; /* Center align items */
+    gap: 20px; /* Add spacing between cards */
+  }
+  
+  .cooperative-card {
+    width: 100%; /* Full width */
+    max-width: 400px; /* Set a max width */
+    padding: 15px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .cooperative-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .cooperative-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .view-more {
+    background: #218838;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  
+  
+  /* No Results */
+  .no-results {
+    font-size: 1.2rem;
+    color: #777;
+  }
+  
+  /* Call to Action Section */
+  .cta-section {
+    margin-top: 40px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+  }
+  
+  .cta-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }

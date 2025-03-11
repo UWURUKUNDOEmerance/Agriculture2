@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  .hero {
+    background: url("../assets/blue.jpg") center/cover no-repeat;
+    text-align: center;
+  color:white;
+    padding: 100px 20px;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+    margin: auto;
+    color: rgb(22, 11, 11);
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-buttons {
+    margin-top: 20px;
+  }
+  
+  .btn-primary, .btn-secondary {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .btn-primary {
+    background: #28a745;
+    color: white;
+  }
+  
+  .btn-secondary {
+   color: black;
+    
+  }
+  
+  
+  .contact-info {
+    text-align: center;
+    padding: 40px 20px;
+    
+  }
+ 
+  .contact-form {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .contact-form form {
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+ 
+  .how-it-works {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .step {
+ 
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  

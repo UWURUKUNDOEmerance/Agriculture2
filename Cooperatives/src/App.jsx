@@ -1,25 +1,31 @@
-import React from 'react';
-
-import './App.css'
-import {BrowserRouter,Routes,Route} from "react-router-dom"
-import Layout from './Components/Layout'
-import Home from './Components/Home';
-
+import React from "react";
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./Components/Layout";
+import Home from "./Components/Home";
+import Cooperatives from "./Components/cooperatives";
+import Products from "./Components/Products";
+import About from "./Components/About";
+import Contact from "./Components/Contact";
+import Auth from "./Components/Auth";
 
 function App() {
-  
-
   return (
-    <div>
     <BrowserRouter>
       <Routes>
-      <Route path="/" element={<Layout/>}>
-     <Route path='/Home' index element={<Home/>}/>
-       </Route> 
-     </Routes>
+        
+        <Route path="/" element={<Layout />}>
+          
+          <Route index element={<Home />} />
+          <Route path="/cooperatives" element={<Cooperatives />} />
+          <Route path="/Products" element={<Products />} />
+          <Route path="/About" element={<About/>}/>
+          <Route path="/Contact" element={<Contact/>}/>
+          <Route path="/Auth" element={<Auth/>}/>
+        </Route>
+      </Routes>
     </BrowserRouter>
-  </div>
-  )
+  );
 }
 
 export default App;

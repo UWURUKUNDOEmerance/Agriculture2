@@ -1,44 +1,74 @@
+/* Footer Styles */
 .footer {
-  /* background-image: url("../assets/image3.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 50vh;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); */
   background-color: #084d0a;
-  }
-  
-  .footer-info {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-  }
-  .subscribe{
-    margin-left: 200px;
-  }
-  .subscribe input {
-    padding: 8px;
-    margin-right: 10px;
-  }
-  
-  .subscribe button {
-    background: #4caf50;
-    color: white;
-    padding: 8px 15px;
-    border: none;
-    cursor: pointer;
-  }
-  .contact p{
-    display:flex;
-    color: white;
-  }
-  .contact  ul li{
-    color: white;
-  }
-  .all{
-    display: flex;
-    text-align: center;
-    color: white;
-    margin-left: 500px ;
-    margin-top: 100px;
-  }
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 10px;
+}
+
+.footer-section h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #f8b400;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 8px 0;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #f8b400;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #f8b400;
+}
+
+/* Bottom Footer */
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
