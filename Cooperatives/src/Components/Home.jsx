@@ -3,7 +3,7 @@ import  "../Styles/home.css";
 import { VscArrowRight } from "react-icons/vsc";
 import Coffee from "../assets/Coffee.jpeg";
 import Rice from "../assets/Rice.jpg";
-
+import { useNavigate } from "react-router-dom";
 import image5 from "../assets/image5.jpg"
 export const Cooperatives = [
   { name: "Tea Cooperatives 🍵",image:Coffee},
@@ -11,6 +11,11 @@ export const Cooperatives = [
   { name: " Maize and Grain Cooperatives 🌽", image:image5},
 ];
 const Home = () => {
+  const navigate=useNavigate()
+  const handleLogin = () => {
+    navigate('/CooperativeForm'); // Use navigate() correctly
+  };
+  
   return (
     <section className="about-container">
     <div className="content">
@@ -28,7 +33,7 @@ const Home = () => {
         Find fresh produce directly from cooperatives
         </p>
         <button className="cta">Browse Products</button>
-        <button className="cta secondary">Register Cooperative</button>
+        <button onClick={handleLogin} className="cta secondary">Register Cooperative</button>
         </div>
        </div>
       </section>

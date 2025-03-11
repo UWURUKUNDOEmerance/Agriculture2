@@ -8,6 +8,7 @@ import Products from "./Components/Products";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
 import Auth from "./Components/Auth";
+import CooperativeForm from "./Components/CooperativeForm";
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
           <Route path="/Products" element={<Products />} />
           <Route path="/About" element={<About/>}/>
           <Route path="/Contact" element={<Contact/>}/>
-          <Route path="/Auth" element={<Auth/>}/>
+          <Route path="/Authantication" element={<Auth/>}/>
+          <Route path="/CooperativeForm" element={<CooperativeForm/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
