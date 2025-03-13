@@ -13,17 +13,20 @@ export const Cooperatives = [
 const Home = () => {
   const navigate=useNavigate()
   const handleLogin = () => {
-    navigate('/CooperativeForm'); // Use navigate() correctly
+    navigate('/CooperativeForm'); 
   };
   
   return (
     <section className="about-container">
+      <div className="back">
+
+     
     <div className="content">
 <h1 className="about">Welcome</h1>
 <div className="barg">Home<span className="blog"><VscArrowRight />Blog Standard</span>
 </div>
 </div>
-
+</div>
       
       <section className="about-intro">
       <div className="part">

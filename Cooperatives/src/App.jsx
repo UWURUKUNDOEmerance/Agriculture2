@@ -9,6 +9,8 @@ import About from "./Components/About";
 import Contact from "./Components/Contact";
 import Auth from "./Components/Auth";
 import CooperativeForm from "./Components/CooperativeForm";
+import DashboardLayout from "./Components/Dashboardpage/DashboardLayout";
+import Sidebar from "./Components/Dashboardpage/Sidebar";
 
 function App() {
   return (
@@ -24,7 +26,12 @@ function App() {
           <Route path="/Contact" element={<Contact/>}/>
           <Route path="/Authantication" element={<Auth/>}/>
           <Route path="/CooperativeForm" element={<CooperativeForm/>}/>
-        </Route>
+          </Route>
+       <Route path="/" element={<DashboardLayout/>}> 
+       <Route path="/Dashboard" element={<Sidebar/>}/>
+       
+       </Route>
+      
       </Routes>
     </BrowserRouter>
   );

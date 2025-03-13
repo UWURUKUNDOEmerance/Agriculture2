@@ -1,0 +1,177 @@
+import React from "react";
+import Sidebar from "../components/Sidebar";
+import { useNavigate } from "react-router-dom";
+
+const Dashboard = () => {
+  const navigate = useNavigate();
+  
+  return (
+    <div className="dashboard-container">
+      <Sidebar />
+      <div className="dashboard-content">
+        <h2>Welcome to Your Dashboard</h2>
+        <button onClick={() => navigate('/add-product')} className="btn-add">
+          + Add Product
+        </button>
+        {/* Product List Table */}
+      </div>
+    </div>
+  );
+};
+
+export default Dashboard;
+// fgndcdcsdkljfgvbyibuoueoxplkegifjlcko'lxl;dkkengnhiok;,fjclksduluj39tuuriigjerogjuifguggrioeiiofdlkklc
+import React from "react";
+import { Link } from "react-router-dom";
+
+const Sidebar = () => {
+  return (
+    <div className="sidebar">
+      <Link to="/dashboard">Dashboard</Link>
+      <Link to="/orders">Orders</Link>
+      <Link to="/payments">Payments</Link>
+      <Link to="/settings">Settings</Link>
+      <Link to="/logout">Logout</Link>
+    </div>
+  );
+};
+
+export default Sidebar;
+// fgerjkghhujgockdgkhnfhnfjeknfungrgrnffjklkmgregejklfegfefjgkeffjk
+import React from "react";
+import { Link } from "react-router-dom";
+
+const Sidebar = () => {
+  return (
+    <div className="sidebar">
+      <Link to="/dashboard">Dashboard</Link>
+      <Link to="/orders">Orders</Link>
+      <Link to="/payments">Payments</Link>
+      <Link to="/settings">Settings</Link>
+      <Link to="/logout">Logout</Link>
+    </div>
+  );
+};
+
+export default Sidebar;
+// trfgvkjdrtfghkurfjfjyggggggf
+import React, { useState } from "react";
+
+const AddProduct = () => {
+  const [product, setProduct] = useState({
+    name: "",
+    category: "",
+    price: "",
+    quantity: "",
+    image: null,
+  });
+
+  const handleChange = (e) => {
+    setProduct({ ...product, [e.target.name]: e.target.value });
+  };
+
+  const handleFileChange = (e) => {
+    setProduct({ ...product, image: e.target.files[0] });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Product added:", product);
+  };
+
+  return (
+    <div className="form-container">
+      <h2>Add New Product</h2>
+      <form onSubmit={handleSubmit}>
+        <input type="text" name="name" placeholder="Product Name" required onChange={handleChange} />
+        <select name="category" required onChange={handleChange}>
+          <option value="">Select Category</option>
+          <option value="Vegetables">Vegetables</option>
+          <option value="Grains">Grains</option>
+          <option value="Dairy">Dairy</option>
+        </select>
+        <input type="number" name="price" placeholder="Price per Unit" required onChange={handleChange} />
+        <input type="number" name="quantity" placeholder="Quantity Available" required onChange={handleChange} />
+        <label>
+          Upload Image: <input type="file" accept="image/*" required onChange={handleFileChange} />
+        </label>
+        <button type="submit" className="btn-submit">Save</button>
+      </form>
+    </div>
+  );
+};
+
+export default AddProduct;
+// jsgbfkfjejtyfjefkckfhukyerighuvedhcjseuigrg
+import React from "react";
+import { Cooperatives } from "../data"; // Sample data
+
+const ProductCatalog = () => {
+  return (
+    <div className="catalog-container">
+      <h2>Marketplace</h2>
+      <div className="grid">
+        {Cooperatives.map((product, index) => (
+          <div key={index} className="product-card">
+            <img src={product.image} alt={product.name} />
+            <h3>{product.name}</h3>
+            <button>Order Now</button>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default ProductCatalog;
+// jdshdustfwetfhjxcfejhffhyuiejfem
+import React, { useState } from "react";
+
+const OrderForm = ({ product }) => {
+  const [order, setOrder] = useState({
+    quantity: 1,
+    name: "",
+    phone: "",
+    address: "",
+    paymentMethod: "",
+  }
+  const handleChange = (e) => {
+    setOrder({ ...order, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Order placed:", order);
+  };
+
+  return (
+    <form onSubmit={handleSubmit} className="order-form">
+      <h3>Order {product.name}</h3>
+      <input type="number" name="quantity" min="1" required onChange={handleChange} />
+      <input type="text" name="name" placeholder="Your Name" required onChange={handleChange} />
+      <input type="tel" name="phone" placeholder="Phone Number" required onChange={handleChange} />
+      <textarea name="address" placeholder="Delivery Address" required onChange={handleChange} />
+      <select name="paymentMethod" required onChange={handleChange}>
+        <option value="">Select Payment Method</option>
+        <option value="Mobile Money">Mobile Money</option>
+        <option value="Bank Transfer">Bank Transfer</option>
+      </select>
+      <button type="submit">Confirm Order</button>
+    </form>
+  );
+};
+
+export default OrderForm;
+// yfgsjklcljkdjklfjkl;dgferlkthlkrt
+import React from "react";
+
+const SellerDashboard = () => {
+  return (
+    <div className="dashboard-container">
+      <h2>Orders</h2>
+      {/* Table of incoming orders */}
+    </div>
+  );
+};
+
+export default SellerDashboard;

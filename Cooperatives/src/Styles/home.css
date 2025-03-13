@@ -15,7 +15,11 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 50vh;
+    min-height: 70vh;
+    max-width: 2000px;
+    
+    margin-top: -45px;
+    padding: 0px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   
   }
@@ -142,41 +146,33 @@ color: white;
  .subscribe{
   display: flex;
   margin-left: 100px;
-  margin-top: 41px;
+  margin-top: 20px;
   text-align: center;
 }
 .search-input {
    
-  padding: 10px;
+ 
+  padding: 25px ; 
   font-size: 16px;
   border: 1px solid #4bce2b;
   border-radius: 8px;
   outline: none;
+  width: 30%;
 }
 .sub {
-
-   padding: 10px 16px; 
+  width: 10%;
   background-color: #6cdf7f;
-
   border: none;
-  border-radius: 8px;
+  border-radius: 6px;
+  padding:3px ;
+  margin-bottom: 15px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-left: -45px; 
-  display: flex;
-  align-items: center;
+  /* transition: background-color 0.3s ease; */
   justify-content: center;
 }
 
 
-.sub:hover {
-  background-color: #dfe5ec;
- 
 
-}
-.sub svg {
-  font-size: 20px;
-} 
 
 
 

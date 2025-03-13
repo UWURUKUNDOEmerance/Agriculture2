@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import "../Styles/auth.css"
+import { useNavigate } from "react-router-dom";
 
 const Auth = () => {
+  const navigate=useNavigate()
+  const handleLogin = () => {
+    navigate('/CooperativeForm'); 
+  };
     
     const [isLogin, setIsLogin] = useState(true);
     const handleSubmit = (e) => {
@@ -19,7 +24,7 @@ const Auth = () => {
           <p>Empowering cooperatives, connecting markets.</p>
           <div className="hero-buttons">
             <button className="btn-primary">Browse Products</button>
-            <button className="btn-secondary">Register Cooperative</button>
+            <button onClick={handleLogin} className="btn-secondary">Register Cooperative</button>
           </div>
         </div>
       </section>

@@ -1,7 +1,7 @@
 // import React from "react";
 import React, { useState } from "react";
 
-
+import { useNavigate } from "react-router-dom";
 import "../Styles/Cooperatives.css";
 
 const cooperativesData = [
@@ -11,6 +11,10 @@ const cooperativesData = [
 ];
 
 const Cooperatives = () => {
+  const navigate=useNavigate()
+  const handleLogin = () => {
+    navigate('/CooperativeForm'); 
+  };
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("");
 
@@ -25,7 +29,7 @@ const Cooperatives = () => {
       <section className="hero">
         <h1>Discover Trusted Cooperatives</h1>
         <p>Connecting local cooperatives with buyers and partners.</p>
-        <button className="cta-button">Register Your Cooperative</button>
+        <button onClick={handleLogin} className="cta-button">Register Your Cooperative</button>
       </section>
 
      

@@ -3,7 +3,7 @@
     /* text-align: center; */
     padding: 20px;
     max-width: 900px;
-    margin: auto;
+    left: 3px;
   }
   
 
@@ -11,6 +11,7 @@
     background: url("../assets/image3.jpg") center/cover no-repeat;
     padding: 60px 20px;
     color: white;
+    width: 100rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
   }
