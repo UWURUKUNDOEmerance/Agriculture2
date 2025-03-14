@@ -10,13 +10,13 @@ import { RiLogoutCircleFill } from "react-icons/ri";
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <Link to="/dashboard" className="side"><AiOutlineDashboard className="icon"/>Dashboard</Link>
-      <Link to="/orders" className="side"><FaJediOrder className="icon"/>Orders</Link>
-      <Link to="/payments"className="side" ><MdOutlinePayment className="icon"/>
+      <Link to="/Dashboard" className="side"><AiOutlineDashboard className="icon"/>Dashboard</Link>
+      <Link to="/Orders" className="side"><FaJediOrder className="icon"/>Orders</Link>
+      <Link to="/Payment"className="side" ><MdOutlinePayment className="icon"/>
       Payments</Link>
-     <Link to="/settings"className="side" > <IoSettings className="icon"/>
+     <Link to="/Setting"className="side" > <IoSettings className="icon"/>
       Settings</Link>
-      <Link to="/logout" className="side"><RiLogoutCircleFill className="icon"/>Logout</Link>
+      <Link to="/Logout" className="side"><RiLogoutCircleFill className="icon"/>Logout</Link>
     </div>
   );
 };

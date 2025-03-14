@@ -10,7 +10,10 @@ import Contact from "./Components/Contact";
 import Auth from "./Components/Auth";
 import CooperativeForm from "./Components/CooperativeForm";
 import DashboardLayout from "./Components/Dashboardpage/DashboardLayout";
-import Sidebar from "./Components/Dashboardpage/Sidebar";
+import Dashboard from "./Components/Dashboardpage/Dashboard";
+import Orders from "./Components/Dashboardpage/Orders";
+import Payment from "./Components/Dashboardpage/Payment";
+import Settings from "./Components/Dashboardpage/Setting";
 
 function App() {
   return (
@@ -28,8 +31,10 @@ function App() {
           <Route path="/CooperativeForm" element={<CooperativeForm/>}/>
           </Route>
        <Route path="/" element={<DashboardLayout/>}> 
-       <Route path="/Dashboard" element={<Sidebar/>}/>
-       
+    <Route path="/Dashboard" element={<Dashboard/>}/>
+      <Route path="/Orders" element={<Orders/>}/> 
+    <Route path="/Payment" element={<Payment/>}/>
+    <Route path="/setting" element={<Settings/>}/>
        </Route>
       
       </Routes>

@@ -1,12 +1,12 @@
 import React from "react";
-import "./Dashboard.css";
+
 import { FaHome, FaBox, FaMoneyBill, FaShoppingCart, FaCog, FaSignOutAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Dashboard = () => {
   return (
     <div className="dashboard-container">
-      {/* Sidebar Navigation */}
+      
       <aside className="sidebar">
         <h2>Coop Dashboard</h2>
         <nav>
@@ -19,9 +19,9 @@ const Dashboard = () => {
         </nav>
       </aside>
       
-      {/* Main Content */}
+      
       <main className="main-content">
-        {/* Statistics Summary */}
+       
         <section className="stats">
           <div className="stat-card">Total Products: 10</div>
           <div className="stat-card">Total Orders: 25</div>
@@ -30,7 +30,6 @@ const Dashboard = () => {
           <div className="stat-card">Earnings: 500,000 Rwf</div>
         </section>
 
-        {/* Recent Orders Table */}
         <section className="orders">
           <h3>Recent Orders</h3>
           <table>
